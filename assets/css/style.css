@@ -9,8 +9,10 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
+  /* border-left: 1px solid black; */
+  /* padding: 10px; */
+  outline: none;
+  width: 100%
 }
 
 .jumbotron {
@@ -23,6 +25,7 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+  line-height: 1.2rem;
 }
 
 .time-block {
@@ -30,6 +33,7 @@ textarea {
   border-radius: 15px;
 }
 
+/* TO DO - remove row? */
 .row {
   white-space: pre-wrap;
   height: 80px;
@@ -58,16 +62,20 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  /* border-left: 1px solid black; */
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   background-color: #06aed5;
   color: white;
+  border: none;
+  padding: 1rem;
+  margin: 0;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
+.saveBtn:hover {
+  font-size: 1.2rem;
   transition: all 0.3s ease-in-out;
+  background-color: #048baa;
 }
 
 /* bootstrap custom / extended */
@@ -77,4 +85,10 @@ textarea {
 
 .w-80 {
   width: 80%;
+}
+
+.table td.btn-background{
+  padding: 0;
+  background-color: #ffffff;
+  border:none;
 }
