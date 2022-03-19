@@ -90,5 +90,11 @@ textarea {
 .table td.btn-background{
   padding: 0;
   background-color: #ffffff;
-  border:none;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+button:focus{
+  outline: 5px auto #03687f;
 }
