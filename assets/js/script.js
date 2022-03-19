@@ -3,7 +3,7 @@ var today = moment();
 $("#currentDay").text(today.format("[Today is] dddd, Do MMMM YYYY"));
 
 
-//TO DO - text hour changes between 9 am and 5 pm.
+//TO DO - test hour changes between 9 am and 5 pm.
 function highlightHour() {
   var currentHour = moment().hour();
 //   console.log(currentHour);
@@ -21,3 +21,5 @@ function highlightHour() {
 }
 
 highlightHour();
+
+//Update middle column into a text area, for user to enter text
