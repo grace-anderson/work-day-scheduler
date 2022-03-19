@@ -70,11 +70,11 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-/* bootstrap custom / extended css */
+/* bootstrap custom / extended */
 .w-10 {
   width: 10%;
 }
 
-.w-65 {
-  width: 65%;
+.w-80 {
+  width: 80%;
 }
