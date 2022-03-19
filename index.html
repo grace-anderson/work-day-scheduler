@@ -34,113 +34,86 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-
-      <!-- table to hold time blocks -->
-      <div class="table-responsive">
+      <!-- rows / columns for time blocks -->
+      <!-- <div class="table-responsive">
         <table class="table align-middle">
-          <!-- <thead> HIDDEN -not needed
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead> -->
-          <tbody>
-            <!-- 9:00 -->
-            <tr class="time-block" id="9">
-              <th class="w-10 hour">9AM</th>
-              <td class="w-80"><textarea class="description" id="text-9"></textarea></td>
-              <td class="w-10 btn-background align-middle">
-                <button class="saveBtn">
-                  <i class="fa-regular fa-floppy-disk fa-2x"></i>
-                </button>
-              </td>
-            </tr>
-
-            <!-- 10:00 -->
-            <tr class="time-block" id="10">
-              <th class="w-10 hour">10AM</th>
-              <td class="w-80"><textarea class="description" id="text-10"></textarea></td>
-              <td class="w-10 btn-background align-middle">
-                <button class="saveBtn">
-                  <i class="fa-regular fa-floppy-disk fa-2x"></i>
-                </button>
-              </td>
-            </tr>
-            <!-- 11:00 -->
-            <tr class="time-block" id="11">
-              <th class="w-10 hour">11AM</th>
-              <td class="w-80"><textarea class="description" id="text-11"></textarea></td>
-              <td class="w-10 btn-background align-middle">
-                <button class="saveBtn">
-                  <i class="fa-regular fa-floppy-disk fa-2x"></i>
-                </button>
-              </td>
-            </tr>
-            <!-- 12:00 -->
-            <tr class="time-block" id="12">
-              <th class="w-10 hour">12PM</th>
-              <td class="w-80"><textarea class="description" id="text-12"></textarea></td>
-              <td class="w-10 btn-background align-middle">
-                <button class="saveBtn">
-                  <i class="fa-regular fa-floppy-disk fa-2x"></i>
-                </button>
-              </td>
-            </tr>
-            <!-- 13:00 -->
-            <tr class="time-block" id="13">
-              <th class="w-10 hour">1PM</th>
-              <td class="w-80"><textarea class="description" id="text-13"></textarea></td>
-              <td class="w-10 btn-background align-middle">
-                <button class="saveBtn">
-                  <i class="fa-regular fa-floppy-disk fa-2x"></i>
-                </button>
-              </td>
-            </tr>
-            <!-- 14:00 -->
-            <tr class="time-block" id="14">
-              <th class="w-10 hour">2PM</th>
-              <td class="w-80"><textarea class="description" id="text-14"></textarea></td>
-              <td class="w-10 btn-background align-middle">
-                <button class="saveBtn">
-                  <i class="fa-regular fa-floppy-disk fa-2x"></i>
-                </button>
-              </td>
-            </tr>
-            <!-- 15:00 -->
-            <tr class="time-block" id="15">
-              <th class="w-10 hour">3PM</th>
-              <td class="w-80"><textarea class="description" id="text-15"></textarea></td>
-              <td class="w-10 btn-background align-middle">
-                <button class="saveBtn">
-                  <i class="fa-regular fa-floppy-disk fa-2x"></i>
-                </button>
-              </td>
-            </tr>
-            <!-- 16:00 -->
-            <tr class="time-block" id="16">
-              <th class="w-10 hour">4PM</th>
-              <td class="w-80"><textarea class="description" id="text-16"></textarea></td>
-              <td class="w-10 btn-background align-middle">
-                <button class="saveBtn">
-                  <i class="fa-regular fa-floppy-disk fa-2x"></i>
-                </button>
-              </td>
-            </tr>
-            <!-- 17:00 -->
-            <tr class="time-block" id="17">
-              <th class="w-10 hour">5PM</th>
-              <td class="w-80"><textarea class="description" id="text-17"></textarea></td>
-              <td class="w-10 btn-background align-middle">
-                <button class="saveBtn">
-                  <i class="fa-regular fa-floppy-disk fa-2x"></i>
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          <tbody> -->
+      <!-- 9:00 -->
+      <div class="row time-block" id="9">
+        <div class="col hour">9AM</div>
+        <textarea class="col-10 description" id="text-9"></textarea>
+        <button class="col saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x"></i>
+        </button>
       </div>
+
+      <!-- 10:00 -->
+      <div class="row time-block" id="10">
+        <div class="col hour">10AM</div>
+        <textarea class="col-10 description" id="text-10"></textarea>
+        <button class="col saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x"></i>
+        </button>
+      </div>
+      <!-- 11:00 -->
+      <div class="row time-block" id="11">
+        <div class="col hour">11AM</div>
+        <textarea class="col-10 description" id="text-11"></textarea>
+        <button class="col saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x"></i>
+        </button>
+      </div>
+      <!-- 12:00 -->
+      <div class="row time-block" id="12">
+        <div class="col hour">12PM</div>
+        <textarea class="col-10 description" id="text-12"></textarea>
+        <button class="col saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x"></i>
+        </button>
+      </div>
+      <!-- 13:00 -->
+      <div class="row time-block" id="13">
+        <div class="col hour">1PM</div>
+        <textarea class="col-10 description" id="text-13"></textarea>
+        <button class="col saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x"></i>
+        </button>
+      </div>
+      <!-- 14:00 -->
+      <div class="row time-block" id="14">
+        <div class="col hour">2PM</div>
+        <textarea class="col-10 description" id="text-14"></textarea>
+        <button class="col saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x"></i>
+        </button>
+      </div>
+      <!-- 15:00 -->
+      <div class="row time-block" id="15">
+        <div class="col hour">3PM</div>
+        <textarea class="col-10 description" id="text-15"></textarea>
+        <button class="col saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x"></i>
+        </button>
+      </div>
+      <!-- 16:00 -->
+      <div class="row time-block" id="16">
+        <div class="col hour">4PM</div>
+        <textarea class="col-10 description" id="text-16"></textarea>
+        <button class="col saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x"></i>
+        </button>
+      </div>
+      <!-- 17:00 -->
+      <div class="row time-block" id="17">
+        <div class="col hour">5PM</div>
+        <textarea class="col-10 description" id="text-17"></textarea>
+        <button class="col saveBtn">
+          <i class="fa-regular fa-floppy-disk fa-2x"></i>
+        </button>
+      </div>
+      <!-- </tbody>
+        </table>
+      </div> -->
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

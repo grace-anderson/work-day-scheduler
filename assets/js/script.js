@@ -27,7 +27,8 @@ $(document).ready(function () {
   //refresh time, to run highlightHour to update current hour colour
   var interval = setInterval(highlightHour, 5000);
 
-  // When Save button clicked, row id and text in middle column saved to local storage
+  // When Save button clicked, row id and text in middle column saved to local storage 
+  //TO DO - update to form with submit button so text saved when user returns OR leave as is so that user can return with in text box????
 
   $(".saveBtn").on("click", function () {
     var timeSlot = $(this).parent().parent().attr("id");
