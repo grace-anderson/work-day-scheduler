@@ -1,3 +1,5 @@
+
+$(document).ready(function(){
 //get today's date
 var today = moment();
 $("#currentDay").text(today.format("[Today is] dddd, Do MMMM YYYY"));
@@ -33,10 +35,23 @@ highlightHour();
 
 // TO DO - save text added to text area to local storage when save button clicked
 
+$(".saveBtn").on("click", function() {
+    var timeSlot = $(this).parent().parent().attr("id");
+    timeSlot = parseInt(timeSlot);
 
+    var textId = "#text-" + timeSlot;
+    var textValue = $.trim($(textId).val());
 
+    localStorage.setItem(textValue, timeSlot);
+    console.log("time and text captured: " + timeSlot + ", " + textValue);
+});
 
 
 //TO DO - put a limit on when text can be added. e.g. can text be added to past rows? (not mentioned in requirements)
+//TO DO - can text be saved when the the textarea is empty ("")?
 //TO DO - look at updating from a table to bootstrap columns with "mini forms" for each row 
 //
+
+
+
+})
