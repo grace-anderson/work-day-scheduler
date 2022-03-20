@@ -9,10 +9,8 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  /* border-left: 1px solid black; */
-  /* padding: 10px; */
-  outline: none;
-  width: 100%
+  border-left: 1px solid black;
+  padding: 10px;
 }
 
 .jumbotron {
@@ -25,7 +23,6 @@ textarea {
 
 .description {
   white-space: pre-wrap;
-  line-height: 1.2rem;
 }
 
 .time-block {
@@ -41,7 +38,9 @@ textarea {
 
 .hour {
   background-color: #ffffff;
+  font-weight: bold;
   color: #000000;
+  padding-top: 10px;
   border-top: 1px dashed #000000;
 }
 
@@ -61,39 +60,43 @@ textarea {
 }
 
 .saveBtn {
-  /* border-left: 1px solid black; */
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-top: 0;
   background-color: #06aed5;
   color: white;
-  border: none;
-  padding: 1rem;
-  margin: 0;
 }
 
-.saveBtn:hover {
-  font-size: 1.2rem;
+.saveBtn i:hover {
+  font-size: 2.4rem;
   transition: all 0.3s ease-in-out;
-  background-color: #048baa;
 }
 
-/* bootstrap custom / extended */
-.w-10 {
-  width: 10%;
+.row {
+  height: auto;
 }
 
-.w-80 {
-  width: 80%;
-}
+@media screen and (max-width: 576px) {
+  
+  h1.custom-display-3 {
+    font-size:2.4rem;
+  }
 
-.table td.btn-background{
-  padding: 0;
-  background-color: #ffffff;
-  border-top: 2px solid #ffffff;
-  border-right: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
-}
+  .custom-container {
+    max-width: 90%;
+  }
 
-button:focus{
-  outline: 5px auto #03687f;
+  .custom-col-2 {
+    padding-left: 4px;
+  }
+
+  .hour {
+    font-size: 0.8rem;
+  }
+
+  .custom-fa-2x {
+    font-size: 0.8rem;
+    text-align: left;
+  }
 }
