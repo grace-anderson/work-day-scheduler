@@ -31,7 +31,8 @@ $(document).ready(function () {
   //TO DO - update to form with submit button so text saved when user returns OR leave as is so that user can return with in text box????
 
   $(".saveBtn").on("click", function () {
-    var timeSlot = $(this).parent().parent().attr("id");
+    // var timeSlot = $(this).parent().parent().attr("id");
+    var timeSlot = $(this).parent().attr("id");
 
     var textId = "#text-" + timeSlot;
     var textValue = $.trim($(textId).val());
