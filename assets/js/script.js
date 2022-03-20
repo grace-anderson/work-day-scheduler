@@ -3,6 +3,7 @@ $(document).ready(function () {
   var today = moment();
   $("#currentDay").text(today.format("[Today is] dddd, Do MMMM YYYY"));
 
+
   // update colour blocks (past, present, future) when time updates
   function highlightHour() {
     var currentHour = moment().hour();
@@ -25,32 +26,41 @@ $(document).ready(function () {
   highlightHour();
 
   //refresh time, to run highlightHour to check for updating colour
-  var interval = setInterval(highlightHour, 5000);
+  setInterval(highlightHour, 5000);
 
-  //TO DO - update to form with submit button so text saved when user returns OR leave as is so that user can return with in text box????
+  //prepare alert
+  var alertPlaceholder = document.getElementById("liveAlertPlaceholder");
 
+  function alert(message, type) {
+    var wrapper = document.createElement("div");
+    wrapper.innerHTML =
+      '<div class="alert alert-danger alert-' +
+      type +
+      ' alert-dismissible" role="alert">' +
+      message;
+
+    alertPlaceholder.append(wrapper);
+  }
+
+  //button to save text
   $(".saveBtn").on("click", function () {
-    var timeSlot = $(this).parent().attr("id");
 
-    var textId = "#text-" + timeSlot;
-    var textValue = $.trim($(textId).val());
-
-    localStorage.setItem(timeSlot, textValue);
-    console.log("time and text captured: " + timeSlot + ", " + textValue);
-  });
-
-  $(".saveBtn").on("click", function () {
     var timeSlot = $(this).parent().attr("id");
 
     var textId = "#text-" + timeSlot;
     var textValue = $.trim($(textId).val());
 
     if (textValue === "") {
-        
-    }
 
-    localStorage.setItem(timeSlot, textValue);
-    console.log("time and text captured: " + timeSlot + ", " + textValue);
+      alert("Enter some text in your event");
+      $(liveAlertPlaceholder).fadeOut(3000);
+
+      localStorage.setItem(timeSlot, textValue);
+      console.log("time and text captured: " + timeSlot + ", " + textValue);
+    } else {
+      localStorage.setItem(timeSlot, textValue);
+      console.log("time and text captured: " + timeSlot + ", " + textValue);
+    }
   });
 
   //TO DO - do saved items save to next day, need to add a check on the date??  OR when date updates, update all text items to "" -  easuer than saving date against the items?
@@ -67,9 +77,6 @@ $(document).ready(function () {
   $("#text-17").val(localStorage.getItem("17"));
 
   //TO DO - put a limit on when text can be added. e.g. can text be added to past rows? (not mentioned in requirements)
-  //TO DO - can text be saved when the the textarea is empty ("")?
-  //TO DO - look at updating from a table to bootstrap columns with "mini forms" for each row
   //TO DO - put a character limit on text row?
-  //TO DO - how to put a z index on the button so that it enlarges on top of the other elements, and doesn't push them away
   //TO DO - make today's date strong/bold - perhaps its just update to heading h3? h2?
 });
