@@ -29,7 +29,7 @@ $(document).ready(function () {
   setInterval(highlightHour, 10000);
 
   //prepare alert
-  var alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+  var alertPlaceholder = $("#liveAlertPlaceholder");
 
   function alert(message, type) {
     var wrapper = document.createElement("div");
@@ -44,20 +44,21 @@ $(document).ready(function () {
 
   //button to save text
   $(".saveBtn").on("click", function () {
-    
     var timeSlot = $(this).parent().attr("id");
     var textId = "#text-" + timeSlot;
     var textValue = $.trim($(textId).val());
     console.log("textValue", textValue);
 
-    if (textValue !== "" || textValue === null) {
+    if (textValue !== "") {
       localStorage.setItem(timeSlot, textValue);
       console.log("time and text captured: " + timeSlot + ", " + textValue);
     } else {
-      //show alert
-      //TO DO issue with alert only showing after page refreshed
+      //show alert if no text when button clicked
       alert("Enter some text in your event");
-      $(liveAlertPlaceholder).fadeOut(3000);
+      alertPlaceholder.fadeOut(3000, () => {
+        alertPlaceholder.show();
+        alertPlaceholder.empty();
+      });
 
       textValue = "";
 

@@ -13,12 +13,13 @@ textarea {
   padding: 0.6rem;
 }
 
-.jumbotron {
+.custom-jumbotron {
   text-align: center;
   background-color: transparent;
   color: black;
   border-radius: 0;
   border-bottom: 0.6rem solid black;
+  padding-bottom: 1rem;
 }
 
 .custom-container {
