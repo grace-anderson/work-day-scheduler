@@ -61,9 +61,7 @@ $(document).ready(function () {
       });
 
       textValue = "";
-
       localStorage.setItem(timeSlot, textValue);
-
       console.log("time and text captured: " + timeSlot + ", " + textValue);
     }
   });
