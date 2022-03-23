@@ -76,14 +76,14 @@ textarea {
 }
 
 .saveBtn {
-  border-top: 2px solid #49C2DD;
-  border-right: 2px solid #49C2DD;
-  border-bottom: 2px solid #49C2DD;
+  border-top: 2px solid var(--button-light);
+  border-right: 2px solid var(--button-light);
+  border-bottom: 2px solid var(--button-light);
   border-left: 2px solid var(--light);
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   padding-top: 0;
-  background-color: #06aed5;
+  background-color: var(--button);
   color: var(--light);
 }
 
@@ -93,7 +93,7 @@ textarea {
 }
 
 .saveBtn:hover {
-  background-color: #49C2DD;
+  background-color: var(--button-light);
   border: 2px solid var(--light);
 }
 
