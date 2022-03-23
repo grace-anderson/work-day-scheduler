@@ -8,7 +8,6 @@
   --button-light:#49C2DD;
 }
 
-
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -22,6 +21,7 @@ textarea {
   color: var(--dark);
   border-left: 1px solid var(--dark);
   padding: 0.6rem;
+  transition:  1s ease-in-out;
 }
 
 .custom-jumbotron {
@@ -31,6 +31,7 @@ textarea {
   border-radius: 0;
   border-bottom: 0.6rem solid var(--dark);
   padding-bottom: 1rem;
+  transition: all 1s ease-in-out;
 }
 
 .custom-container {
@@ -50,6 +51,7 @@ textarea {
   white-space: pre-wrap;
   height: 5rem;
   border-top: 1px solid var(--light);
+  transition: all 1s ease-in-out;
 }
 
 .hour {
@@ -58,6 +60,7 @@ textarea {
   color: var(--dark);
   padding-top: 0.6rem;
   border-top: 1px solid var(--dark);
+  transition: all 1s ease-in-out;
 }
 
 .past {
@@ -90,6 +93,7 @@ textarea {
 .saveBtn i:hover {
   font-size: 2.4rem;
   transition: all 0.3s ease-in-out;
+
 }
 
 .saveBtn:hover {
@@ -99,6 +103,12 @@ textarea {
 
 .row {
   height: auto;
+}
+
+#liveAlertPlaceholder {
+  position: fixed;
+  margin-left: 10rem;
+  z-index: 3;
 }
 
 @media screen and (max-width: 576px) {
@@ -122,4 +132,9 @@ textarea {
     font-size: 0.8rem;
     text-align: left;
   }
+
+  #liveAlertPlaceholder {
+    margin-left: auto;
+  }
+
 }

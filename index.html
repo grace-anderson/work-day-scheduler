@@ -33,18 +33,21 @@
       <p>A simple calendar app for scheduling your work day</p>
       <h3 id="currentDay"></h3>
       <!-- button alert -->
-      <div id="liveAlertPlaceholder"></div>
+      <!-- <div id="liveAlertPlaceholder"></div> -->
     </header>
 
     <div class="container custom-container">
       <!-- Timeblocks go here -->
       <!-- 9:00 -->
       <div class="row row-cols-3 time-block" id="9">
+        <!-- alert shows on row when button clicked without content -->
+        <div id="liveAlertPlaceholder"></div>
         <div class="col-xl-1 col-2 custom-col-2 hour">9AM</div>
         <textarea
           class="col-xl-10 col-lg-9 col-8 description"
           id="text-9"
         ></textarea>
+
         <button
           class="col-xl-1 col-lg-1 col-2 custom-col-2 text-center saveBtn"
         >

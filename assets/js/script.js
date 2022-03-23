@@ -47,7 +47,6 @@ $(document).ready(function () {
     var timeSlot = $(this).parent().attr("id");
     var textId = "#text-" + timeSlot;
     var textValue = $.trim($(textId).val());
-    console.log("textValue", textValue);
 
     if (textValue !== "") {
       localStorage.setItem(timeSlot, textValue);
