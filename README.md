@@ -5,7 +5,7 @@ This app is a simple daily planner application that allows a user to save events
 
 [Deployed calendar app](https://grace-anderson.github.io/work-day-scheduler/)
 
-## Features
+## Features and Technology
 
 The work day scheduler app runs in the browser using dynamically updated HTML and CSS powered by jQuery.  [Moment.js](https://momentjs.com/) is used to work with date and time. Local storage saves entered events. The day and date displayed in the header updates for each day.
 
