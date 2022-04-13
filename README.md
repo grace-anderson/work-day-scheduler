@@ -5,8 +5,17 @@ This app is a simple daily planner application that allows a user to save events
 
 [Deployed calendar app](https://grace-anderson.github.io/work-day-scheduler/)
 
-## Features and Technology
+## Technologies
+* HTML5
+* CSS3
+* JavaScript
+* jQuery
+* Bootstrap CSS Library
+* Fontawesome icon library
+* Google Fonts
+* [Moment.js](https://momentjs.com/)
 
+## Features
 The work day scheduler app runs in the browser using dynamically updated HTML and CSS powered by jQuery.  [Moment.js](https://momentjs.com/) is used to work with date and time. Local storage saves entered events. The day and date displayed in the header updates for each day.
 
 The hour time blocks update according to the current hour. Past hours are greyed out, the current hour is coloured red, and future hours are coloured green
@@ -27,3 +36,9 @@ Saved events will continue to display after the user refreshes or reopens the ap
 The gif demonstrates the work day scheduler appearance and functionality
 
 ![A user clicks on slots on the color-coded calendar and edits the events.](./assets/work-schedule-demo.gif)
+
+## Contact
+
+Email: [helen.g.anderson@me.com](mailto:helen.g.anderson@me.com)
+
+Phone: +61450010325
